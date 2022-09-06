@@ -35,6 +35,9 @@ export const Watch = () => {
   return (
     <MyWrapper>
       <h1>My Clock</h1>
+      <Link to="/circlehalf" style={{ marginBottom: "10px" }}>
+        <HalfCircle>Go to HalfCircle</HalfCircle>
+      </Link>
       <ElClock>
         {hours && minutes && seconds && `${hours} - ${minutes} - ${seconds}`}{" "}
       </ElClock>
@@ -46,12 +49,6 @@ export const Watch = () => {
           secondDeg={secondDeg}
         />
       </div>
-      <Link
-        to="/circlehalf"
-        style={{ textDecoration: "none", marginTop: "10px" }}
-      >
-        <HalfCircle>Go to HalfCircle</HalfCircle>
-      </Link>
     </MyWrapper>
   );
 };
